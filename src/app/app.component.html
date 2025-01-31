@@ -1,0 +1,15 @@
+<!-- work perfect -->
+<app-parent>
+  <app-child [value]="values()[0]" />
+  <app-child [value]="values()[1]" />
+  <app-child [value]="values()[2]" />
+</app-parent>
+
+<!-- error -->
+<!-- 
+<app-parent>
+  @for (value of values(); track value) {
+    <app-child [value]="value" />
+  }
+</app-parent>
+-->
